@@ -1,0 +1,13 @@
+.place__image {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .place__image {
+    position: relative;
+    left: -16px;
+    width: calc(100vw - (100vw - 100%) + 32px);
+    object-fit: cover;
+    object-position: center center;
+  }
+}

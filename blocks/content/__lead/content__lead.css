@@ -1,0 +1,21 @@
+.content__lead {
+  width: calc(100% - 2 * 148px);
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .content__lead {
+    width: calc(100% - 2 * (48px + (148 - 48) * ((100vw - 1024px) / (1279 - 1024))));
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .content__lead {
+    width: calc(100% - 2 * (48 * ((100vw - 768px) / (1023 - 768))));
+  }
+}
+
+@media (max-width: 767px) {
+  .content__lead {
+    width: 100%;
+  }
+}

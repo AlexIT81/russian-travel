@@ -1,0 +1,18 @@
+.places {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  row-gap: 80px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .places {
+    row-gap: 72px;
+  }
+}
+
+@media (max-width: 767px) {
+  .places {
+    row-gap: 50px;
+  }
+}
