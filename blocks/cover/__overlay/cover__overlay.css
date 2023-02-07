@@ -31,17 +31,24 @@
 
 @media (min-width: 1024px) and (max-width: 1279px) {
   .cover__overlay {
-    padding: 195px 0;
+    padding: calc(195px + (245 - 195) * (100vw - 1024px) / (1279 - 1024)) 0;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .cover__overlay {
-    padding: 115px 0;
+    padding: calc(115px + (195 - 115) * (100vw - 768px) / (1023 - 768)) 0;
   }
 }
 
 @media (max-width: 767px) {
+  .cover__overlay {
+    padding: calc(33px + (115 - 33) * (100vw - 321px) / (767 - 321)) 0;
+    row-gap: 16px;
+  }
+}
+
+@media (max-width: 320px) {
   .cover__overlay {
     padding: 33px 0;
     row-gap: 16px;
