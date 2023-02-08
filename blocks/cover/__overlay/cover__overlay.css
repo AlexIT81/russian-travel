@@ -4,8 +4,7 @@
   color: #fff;
   text-decoration: none;
   position: relative;
-  background: url(../../../images/cover-trains.jpg) no-repeat center;
-  background-size: cover;
+  background: center / cover no-repeat url(../../../images/cover-trains.jpg);
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -51,6 +50,5 @@
 @media (max-width: 320px) {
   .cover__overlay {
     padding: 33px 0;
-    row-gap: 16px;
   }
 }

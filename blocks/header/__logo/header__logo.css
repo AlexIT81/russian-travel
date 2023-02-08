@@ -8,3 +8,10 @@
 .header__logo:hover {
   opacity: .8;
 }
+
+@media (max-width: 767px) {
+  .header__logo  {
+    width: 142px;
+    height: 42px;
+  }
+}
